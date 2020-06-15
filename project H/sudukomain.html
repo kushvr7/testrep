@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>suduko final</title>
+	<style >
+		table{
+		position: absolute;
+		top: 200px;
+		left:530px;
+	}
+		tr,td{
+			border:2px solid black;
+
+		}
+		td{
+			width: 70px;
+			height: 70px;	
+		 }
+	</style>
+</head>
+<body>
+	<p id="demo">values in arry[]</p>
+	<button onclick="reveal()">reveal</button>
+	<button onclick="pass()">pass</button>
+	<button onclick="display()">display</button>
+	<!-- <button onclick="test()">test</button> -->
+	<table>
+	<tr>
+		<td><input type="tel" id="q00" name="" min="1" max="6"  onclick="s(0,0)" oninput="test(0,0)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+		<td><input type="tel" id="q01" name="" min="1" max="6"   onclick="s(0,1)" oninput="test(0,1)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+		<td><input type="tel" id="q02" name="" min="1" max="6"   onclick="s(0,2)" oninput="test(0,2)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+	</tr>	
+    <tr>
+		<td><input type="tel" id="q10" name="" min="1" max="6"  onclick="s(1,0)" oninput="test(1,0)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+		<td><input type="tel" id="q11" name="" min="1" max="6"  onclick="s(1,1)" oninput="test(1,1)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+		<td><input type="tel" id="q12" name="" min="1" max="6"  onclick="s(1,2)" oninput="test(1,2)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+	</tr>
+	<tr>
+		<td><input type="tel" id="q20" name="" min="1" max="6"  onclick="s(2,0)" oninput="test(2,0)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+		<td><input type="tel" id="q21" name="" min="1" max="6"  onclick="s(2,1)" oninput="test(2,1)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+		<td><input type="tel" id="q22" name="" min="1" max="6"  onclick="s(2,2)" oninput="test(2,2)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+	</tr>
+	<tr>
+		<td><input type="tel" id="q30" name="" min="1" max="6"  onclick="s(3,0)" oninput="test(3,0)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+		<td><input type="tel" id="q31" name="" min="1" max="6"  onclick="s(3,1)" oninput="test(3,1)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+		<td><input type="tel" id="q32" name="" min="1" max="6"  onclick="s(3,2)" oninput="test(3,2)" style="width: 70px;height:70px;font-size: 35px;text-align:center;"></td>
+	</tr>    
+
+	</table>
+<script>
+	
+	var arr = [ 
+     [],
+     [],
+     [],
+     [],
+     [] ]  ;
+
+    	var arry = [ 
+     [],
+     [],
+     [],
+     [],
+     [] ]  ;
+
+     function reveal(){
+
+  for(i=0 ; i<=3 ; i++ )
+  {
+  	for(j=0 ; j<=2 ; j++)
+  	{
+       arr[i][j] = Math.floor(Math.random()*4 + 1);
+
+       if(  ((arr[i][j])%2 ) == 0 ){
+          document.getElementById("q"+i+j).value = arr[i][j];
+          arry[i][j] = arr[i][j];
+                                   }
+       else{
+       	document.getElementById("q"+i+j).value = " ";
+       	//arry[i][j] = document.getElementById("q"+i+j).value;
+       
+           }
+  }
+}
+                    }
+function s(y,u){
+      if( ( (arr[y][u]) % 2 ) != 0 ){
+  document.getElementById("q"+y+u).style.backgroundColor = " #00FF7F ";
+y=0,u=0;
+}
+            
+}
+
+
+function pass(){
+
+
+	for(i=0 ; i<=2 ; i++)
+		  {
+  	for(j=0 ; j<=2 ; j++)
+  	{
+
+if(  ((arr[i][j])%2 ) != 0  ){
+	arry[i][j] = document.getElementById("q"+i+j).value;
+  	}
+          }
+              }
+}
+
+function display(){
+
+	 document.getElementById("demo").innerHTML = arry;
+ }
+
+ function test(x,d){
+
+  
+ 	// if( ( x==0&&d==0) || (x==1&&d==0) || (x==2&&d==0) || (x==3&&d==0) ){
+ 	    //for(var l=0; l<=4;l++){
+ 		for( var m=0;m<=2;m++){
+ 			if(  ( arry[x][d] == arry[x][m] ) && (d != m) ){
+ 			document.getElementById("q"+x+d).style.backgroundColor = "red";
+ 		     x=0, d=0;
+ 		 }  
+ 		              }
+ 		              } 
+ 		              // } // for(i=0 ; i<=4 ; i++){
+       
+       // for(j=0 ; j<=4 ; j++ ){
+
+       	// if(arry[i][j] == arry[i][j+1]){
+       		// document.getElementById("q"+i+j).style.backgroundColor = "red";
+            // alert("wrong input");      	
+       	// }
+       // }
+
+
+   // }
+//}
+
+//}
+
+</script>
+</body>
+</html>

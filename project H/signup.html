@@ -1,0 +1,316 @@
+<!DOCTYPE>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<style>
+	    .icon{
+          	position: absolute;
+          	top: 60%;
+          	left:68%;
+          	transform:translate(-60%,-68%);
+          	/*display: block;*/
+          	/*margin:0px 7px;*/
+          	
+
+          }
+          .fb{
+          	width: 50px;
+          	height: 50px;
+          	display: block;
+          	/*background-color: black;*/
+          	border-radius: 50%;
+          	/*align-content: center;*/
+
+          	/*opacity: 0.4;*/
+          	margin-bottom: 2px;
+
+          }
+           .tw{
+          	width: 50px;
+          	height: 50px;
+          	display: block;
+          	/*background-color: black;*/
+          	border-radius: 50%;
+          	/*opacity: 0.4;*/
+          	margin-bottom: 2px;
+
+          }
+           .you{
+          	width: 50px;
+          	height: 50px;
+          	display: block;
+          	/*background-color: black;*/
+          	border-radius: 50%;
+          	/*opacity: 0.4;*/
+          	margin-bottom: 2px;
+
+          }
+           .g{
+          	width: 50px;
+          	height: 50px;
+          	display: block;
+          	/*background-color: black;*/
+          	border-radius: 50%;
+          	/*opacity: 0.4;*/
+          	margin-bottom: 2px;
+
+          }
+          .fb i{
+          	position: absolute;
+          	top:10%;
+          	left:38%;
+          	transform: translate(-10%,-38%); 
+          	color:#2196F3;
+                  	
+          	 }
+          	  .tw i{
+          	position: absolute;
+          	top:35%;
+          	left:38%;
+          	transform: translate(-35%,-38%);         
+          	 }
+          	  .you i{
+          	position: absolute;
+          	top:63%;
+          	left:55%;
+          	transform: translate(-63%,-55%);         
+          	 }
+          	  .g i{
+          	position: absolute;
+          	top:69%;
+          	left:67%;
+          	transform: translate(-69%,67%);         
+          	 }
+          	 .fb:hover{
+          	 	background-color: white;
+          	 	/*width:120px;*/
+          	 	/*height:8px;*/
+          	 	/*float:left;*/
+          	 }
+          	 .tw:hover{
+          	 	background-color: white;
+          	 }
+          	 .you:hover{
+          	 	background-color: white;
+          	 }
+             .g:hover{
+          	 	background-color: white;
+          	 }
+          	 .fb i:hover {
+          	 		transition: 2s;
+                transform: rotate(30deg);
+          	 }
+          	  .you i:hover {
+          	 		transition: 2s;
+                transform: rotate(360deg);
+
+          	 }
+          	  .tw i:hover {
+          	 		transition: 3s;
+                transform: rotateX(10deg);
+
+          	 }
+          	  .g i:hover {
+
+          	 		transition: 3s;
+                transform: rotate(90deg);
+
+
+          	 }
+
+		body{
+			 
+			padding:0px;
+			margin: 0px;
+			font-family: Comic Sans MS;
+			background-image:  url(kbg.jpg)  ;
+			background-size: cover;
+			/*opacity: 0.5;*/
+			/*background-image: linear-gradient(20deg,#607d8bd6,#FF9800,#009688,#8BC34A,#FFEB3B	);*/
+		}
+		.sign-box{
+			width: 250px;
+			position: relative;
+			top:20%;
+			left: 10%;
+			color: #FF5722;
+			font-weight: bold;
+		}
+		.textbox{
+			padding: 15px;
+			width: 10px;
+			/*overflow: hidden;*/
+			border-bottom: solid #9e9e9e; 
+			width: 150px;
+		}
+		.sign-box h1{
+			float: left;
+			font-size: 40px;
+			border-bottom: 4px solid #cf5a23 ;
+
+			/*padding: 5px;*/
+	
+			
+		}
+		.textbox i{
+			width: 26px;
+			float: left;
+			text-align: center;
+			opacity: 0.5;
+
+		}
+		.textbox input{
+			border:none;
+			outline: none;
+			background: none;
+			margin-top: 3px;
+			/*font-size: 18px;*/
+			/*width: 80px;*/
+			/*margin:0px 10px;*/
+			/*float:left;*/
+
+		}
+		.but{
+			width: 102;
+			background:none;
+			background-color: #9E9E9E;
+			border:2px solid #9E9E9E;
+			color: #6b4d42;
+			padding:5px;
+			font-size: 18px;
+			cursor: pointer; 
+			border-radius: 10px;
+			font-family: inherit;
+            font-weight: bolder;
+            font-style: oblique;
+            margin-top: 6px;
+             /*top:100%;*/
+
+		}
+		.but:hover{
+			background-color: black;
+			opacity:0.5;
+			width:120px;
+
+		}
+		                          /*.user {
+
+			                           position: absolute;
+			
+		                             	opacity:0.6;
+			                            top:50%;
+			                            left:50%;*/
+	     .user{
+			position: fixed;
+			top:82%;
+			left:94%;
+			transform: translate(-82%,-94%);
+			width:400px;
+			height:400px;
+			/*border: 9px solid white;*/
+			/*border-image:linear-gradient(40deg,blue,green);*/
+			opacity:0.3;
+             background-image: url(8.jpg) ;
+             background-size: cover;
+
+			
+			animation: slide 20s ease infinite;
+			/*background-color: black;*/
+			border-radius: 12px;
+		}
+			@keyframes slide {
+        
+          40%{
+          
+            background:url(9.jpg);
+            background-size: cover;       
+          }
+          50%{
+          
+              background:url(3.png);
+              background-size: cover;
+          }
+          75%{
+          	
+             background:url(0.jpg);
+             background-size: cover;
+          }
+          100%{
+          	background: url(77.jpg);
+          	background-size:cover;
+
+          }
+
+      
+          
+		}
+	     	/*.text{*/
+	     		/*font-family: Comic Sans MS;*/
+             /*font-weight: bolder;*/
+             /*color:white;*/
+             /*position: absolute;*/
+             /*top:50%;*/
+			/*left:50%;*/
+			/*transform: translate(-50%,-50%);*/
+			/*font-size:50px;*/
+			/*background-image: linear-gradient(45deg,red,green);*/
+
+
+
+	     	}
+
+	     	
+	     }
+
+			  
+	
+		
+	
+	</style>
+</head>
+<body>
+	<div class="icon">
+		<div class="fb"><i class="fab fa-facebook-f fa-2x " style="color:#102d84; "></i></div>
+		<div class="tw"><i class="fab fa-twitter fa-2x " style="color:#03A9F4;"></i></div>
+		<div class="you"><i class="fab fa-youtube fa-2x" style="color:#F44336;"></i></div>
+		<div class="g"><i class=" fab fa-google-plus-g fa-2x" style="color:#ff9800;"></i></div>
+		
+	</div>
+	
+	   <div class="user">
+	   	 <!-- <div class="text"> WELCOME </div> -->
+	   	 </div>
+
+    <div class="sign-box">
+    	<h1>SIGN UP</h1>
+		<form action="insert.php" method="post">
+    	<div class="textbox">
+    		<i class="fas fa-user "></i>
+    		<input type="text" placeholder="USERNAME" vlaue="" name="username">
+    	</div>
+
+    	<div class="textbox">
+    		<i class="fas fa-lock"></i>
+    		<input type="password" placeholder="PASSWORD" vlaue="" name="password">
+    	</div>
+
+    	<div class="textbox">
+    		<i class="fas fa-lock-open"></i>
+    		<input type="password" placeholder="CONFIRM PASSWORD" vlaue="" name="">
+    	</div>
+
+    	<div class="textbox">
+    		<i class="fas fa-envelope"></i>
+    		<input type="E-mail" placeholder="E-mail" vlaue="" name="email">
+    	</div>
+    	<!-- <div class="textbox1"> -->
+    		<!-- 	<input type="text" name="" placeholder="about you"> -->
+    		
+    	<!-- </div>  -->
+
+    	<input class="but"  type="button" name="" value="SIGN UP">
+        </form>
+    </div>
+ 
+</body>
+</html>

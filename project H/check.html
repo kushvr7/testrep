@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PASS</title>
+</head>
+<body>
+
+<p id="de"></p>
+	PASSWORD : <input id="passa" type="text" name="" onkeyup="clic()" ><br>
+	CONFIRM PASSWORD : <input id="passb" type="text" name="" onkeyup="clic()">
+    <!-- <button onclick="clic()">GO</button> -->
+
+</body>
+<script>
+
+	function clic()
+	{
+
+	// var a[] ,b[];
+	var k=0;
+	var a = document.getElementById('passa').value;
+	
+	// var a = document.getElementById('passa').value;
+	var b = document.getElementById('passb').value;
+    var za = a.length;
+    // var aa = "hello"; 
+	// var za = a.length;
+	var zb = b.length;
+	if( za!=zb)
+	{
+		document.getElementById("de").innerHTML = "not same password";
+	}
+     else {
+
+        for(var i=0 ; i<=za ; i++)
+        {
+
+        	if(a[i] != b[i])
+        		 k = k + 1; 
+        	// document.getElementById("de").innerHTML = "not same password";
+            // else
+            	// document.getElementById("de").innerHTML = " same password";
+        }
+        if(k!=0)
+        document.getElementById("de").innerHTML = "not same password";
+        else
+        document.getElementById("de").innerHTML = "same password"; 
+          
+        }
+   
+}
+
+</script>
+</html>

@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<title>Background Gradient</title>
+<style type="text/css">
+
+ *{
+ 	padding: 0px;
+ 	margin: 0px;
+ }
+ body {
+ 	/*background-color: black;*/
+background: linear-gradient(60deg,  black,#F05F57);
+background-size: 400% 400%;
+animation: BackgroundGradient 15s ease infinite;
+}
+@keyframes BackgroundGradient {
+0% {background-position: 0% 50%;}
+50% {background-position: 100% 50%;}
+100% {background-position: 0% 50%;}
+}
+
+  ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 0 100px;
+}
+ul li ul li{
+	display: none;
+
+}
+ul li:hover > ul li {
+
+	display: block;
+}
+ul li a {
+ /*display: block;*/*/8
+  color: #794562;
+  
+  text-decoration: none;
+  
+}
+ul li{
+  padding: 8px 16px;	
+  float: left;
+  width: 200px;
+  background-color: #f1f1f1;
+  /*border: 2px;*/	
+  text-align: center;
+  font-family: verdana;
+  font-weight: bold;
+  border-radius: 2px;
+
+  
+  /*border-bottom: 6px solid maroon;*/
+}
+
+
+ul 	li:hover {
+  background-image: linear-gradient(40deg,#FEB692 , #EA5455); 
+  color: white;
+  /*opacity: 0.8;*/
+}
+   .p1{
+   	position: absolute;
+    top: 50%;
+    left:10%;
+   }
+   .p2{
+   	position: absolute;
+    top: 50%;
+    left:43%;
+   }
+   .p3{
+
+   	position: absolute;
+    top: 50%;
+    left:80%;
+   }
+   
+   .pulse{
+
+       
+   	width: 	100px;
+   	height:100px;
+   	background-color: grey;
+    border-radius: 50%;
+    text-align: center;
+    
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 20px;   
+    font-family: Comic Sans MS;
+    animation : aa 3s linear infinite;
+   }
+      
+   .pulse1{
+
+       
+   	width:100px;
+   	height:100px;
+   	background-color: grey;
+   	text-decoration: none;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Comic Sans MS;
+    animation : ab 3s linear infinite;
+    border-style: 
+   }
+
+
+
+
+   .pulse2{
+
+       
+   	width:100px;
+   	height:100px;
+   	background-color: grey;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    font-family: Comic Sans MS;
+    animation : ac 3s linear infinite;
+   }
+   @keyframes aa {
+
+   	0%{   box-shadow: 0 0 0 10px rgba(119, 127, 30,0.8) ,  0 0 0 10px rgba(119, 127, 30,0.8)     }
+   	40%{  box-shadow: 0 0 0 30px rgba(119, 127, 30,0.4), 0 0 0 30px rgba(119, 127, 30,0.4)        }
+   	80%{  box-shadow: 0 0 0 40px rgba(119, 127, 30,0), 0 0 0 40px rgba(119, 127, 30,0)         }
+    100%{ box-shadow: 0 0 0 50px rgba(119, 127, 30,0), 0 0 0 50px rgba(119, 127, 30,0)        }
+   }
+
+   @keyframes ab {
+
+   	0%{   box-shadow: 0 0 0 10px rgba(30, 20, 20,0.8) ,  0 0 0 10px rgba(30, 20, 20,0.8)     }
+   	40%{  box-shadow: 0 0 0 30px rgba(30, 20, 20,0.4), 0 0 0 30px rgba(30, 20, 20,0.4)        }
+   	80%{  box-shadow: 0 0 0 40px rgba(30, 20, 20,0), 0 0 0  40px rgba(30, 20, 20,0)         }
+    100%{ box-shadow: 0 0 0 50px rgba(30, 20, 20,0), 0 0 0  50px rgba(30, 20, 20,0)        }
+
+   }
+   @keyframes ac {
+
+   	0%{   box-shadow: 0 0 0 10px rgba(115, 48, 80,0.8) ,  0 0 0 10px rgba(115, 48, 80,0.8)     }
+   	40%{  box-shadow: 0 0 0 30px rgba(115, 48, 80,0.4), 0 0 0 30px rgba(115, 48, 80,0.4)        }
+   	80%{  box-shadow: 0 0 0 40px rgba(115, 48, 80,0), 0 0 0  40px rgba(115, 48, 80,0)         }
+    100%{ box-shadow: 0 0 0 50px rgba(115, 48, 80,0), 0 0 0  50px rgba(115, 48, 80,0)        }
+   }
+ 
+    .pulse1 a,.pulse2 a,.pulse a{
+    	text-decoration: none;
+    }
+    .A7{
+         
+
+    	font-family: cursive;
+    	font-weight: bold;
+    	text-align: center;
+    	text-shadow: 3px 2px 20px white;
+
+    
+    }
+/*    .gif{
+    	width:200px;
+    	height: 200px;
+    	background-image: url(kj.gif);
+    	background-size:contain;
+    	border-radius: 100px;
+    }
+*/
+
+   }
+}
+</style>
+</head>
+<body>
+	<!-- <div class="gif"> -->
+	
+	<!-- </di>v -->
+<div>
+	<h1 class="A7"><i class="fas fa-atom fa-2x">   ATOM</i></h1>
+</div> 
+	
+	
+	<ul id="drop-nav">
+		
+		<li><a href=""><i class="fas fa-home">   HOME</i></a></li>
+		<li><a href=""><i class="fab fa-wordpress">    WORD PRESS</i></a>
+			<!-- <ul> -->
+				<!-- <li><a>ADMIN</a></li> -->
+				<!-- <li><a>DEVELOPER</a></li> -->
+				<!-- <li><a>STAFF</a></li> -->
+			<!-- </ul> -->
+		</li>
+		<li><a href=""><i class="fas fa-address-book">   CONTACT</i></a>
+			<!-- <ul> -->
+				<!-- <li><a>EMAIL US</a></li> -->
+				<!-- <li><a>WEBSITE</a></li> -->
+				<!-- <li><a>PROJECT</a></li> -->
+			<!-- </ul> -->
+
+		</li>
+		<li><a href=""><i class="fas fa-file">     DOCs</i></a></li>
+		<li><a href=""><i class="fas fa-sort-alpha-down">    SOFTWARE</i></a></li>
+	    <!-- <li><a href="">GALLERY</a></li> -->
+	</ul>
+	</div>
+	<div class="p1">
+		<div class="pulse"><a href="file:///C:/Users/Alpha7/Desktop/login1.html">LOG IN</a></div>
+	</div>
+	<div class="p2">
+		<div class="pulse1"><a href="file:///C:/Users/Alpha7/Desktop/signup.html">SIGN UP</a></div>
+	</div>
+		<div class="p3">
+		<div class="pulse2"><a href="">FREE</a></div>
+	    </div>
+
+</body>
+</html>
